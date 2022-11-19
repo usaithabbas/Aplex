@@ -1,0 +1,188 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family: 'Monserrat',sans-serif;
+  width: 100%;
+  background-color: black;
+}
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  /* background-image: linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff);
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  -webkit-text-fill-color: transparent; */
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: fixed;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    background-image: linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff);
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+.con {
+  background-color: black;
+  width: 100%;
+  font-family: 'Monserrat',sans-serif;
+}
+
+.con .pad{
+  padding-top: 5%;
+}
+
+.con p{
+  color: #00f0ff;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.con .para-1{
+  line-height: 1.5;
+}
+
+.con .para{
+  color: white;
+  font-size: 2.5rem;
+  font-family: inter,sans-serif;
+}
+
+.some{
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+.some img{
+  width: 100%;
+  height: 50%;
+}
+
+.head h1{
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 6%;
+  background-image: linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff);
+ -webkit-background-clip: text;
+ -webkit-box-decoration-break: clone;
+ -webkit-text-fill-color: transparent;
+}
+
+.middle {
+  padding-bottom: 10%;
+}
+.middle h2{
+  text-align: left;
+  padding-left: 5%;
+  color: #00f0ff;
+  font-size: 2rem;
+}
+
+.middle p{
+  overflow: hidden;
+  padding-top: 1%;
+  padding-left: 10%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width:600px) {
+  .head h1{
+    font-size: 2.5rem;
+  }
+
+  .middle h2{
+    font-size: 1.7rem;
+  }
+
+}
+
+
+.bot{
+  text-align: center;
+  background-color: black;
+  height: 10%;
+}
+
+.bot p{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color:grey;
+}
